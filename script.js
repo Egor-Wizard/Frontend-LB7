@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     function provideAnswer(question) {
         if (question) {
-            const answers = ["Так", "Ні"];
+            const answers = ["Yes", "No"];
             const randomAnswer = answers[Math.floor(Math.random() * answers.length)];
             alert(`Магічна куля відповідає: ${randomAnswer}`);
         }
