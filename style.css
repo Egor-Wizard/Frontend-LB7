@@ -9,6 +9,21 @@ body {
     background-position: center; /* Центрувати фонове зображення */
     background-attachment: fixed; /* Фонове зображення зафіксоване при прокручуванні */
 }
+.magic-ball.shake {
+    animation: shake 0.5s ease;
+}
+
+@keyframes shake {
+    0%, 100% {
+        transform: translateX(0);
+    }
+    20%, 60%, 80% {
+        transform: translateX(-10px);
+    }
+    40%, 100% {
+        transform: translateX(10px);
+    }
+}
 
 .magic-ball {
     width: 100%;
